@@ -1,0 +1,62 @@
+/* GENERAL */
+body {
+  font: 400 1rem "League Spartan", sans-serif;
+}
+
+.visually-hidden:not(:focus, :active) {
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  clip-path: inset(50%);
+  height: 1px;
+  overflow: hidden;
+  position: absolute;
+  white-space: nowrap;
+  width: 1px;
+}
+
+/* SOCIAL-PROOF-SECTION */
+.social-proof-section {
+  min-height: 100vh;
+  min-width: 100vw;
+}
+
+.social-proof-section::before {
+  content: "";
+  height: 35%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: url("../images/bg-pattern-top-mobile.svg") left/contain no-repeat;
+}
+
+.social-proof-section::after {
+  content: "";
+  height: 75%;
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  background: url("../images/bg-pattern-bottom-mobile.svg") right/contain
+    no-repeat;
+}
+
+.social-proof-section h2 {
+  width: 70%;
+  color: #502050;
+  font: 700 2.35rem "League Spartan", sans-serif;
+  line-height: 0.85;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5.25rem;
+  margin-bottom: 1.4rem;
+}
+
+.social-proof-section p {
+  width: 88%;
+  color: #937b92;
+  font: 500 1.1rem "League Spartan", sans-serif;
+  line-height: 1.4;
+  text-align: center;
+  margin: 0 auto;
+}
