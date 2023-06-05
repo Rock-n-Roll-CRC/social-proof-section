@@ -30,10 +30,10 @@ build/
 style-guide.md
 README.md
 
-# Config
-.eslintrc.json
-.prettierrc
-.stylelintrc.json
-package-lock.json
-package.json
-tsconfig.json
+# Configs
+/.eslintrc.json
+/.prettierrc
+/.stylelintrc.json
+/package-lock.json
+/package.json
+/tsconfig.json
