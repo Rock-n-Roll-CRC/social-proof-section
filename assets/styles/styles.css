@@ -33,6 +33,7 @@ body {
   left: 0;
   background: url("../images/bg-pattern-top-mobile.svg") top 0 left 0 / contain
     no-repeat;
+  z-index: -999;
 }
 
 .social-proof-section::after {
@@ -44,9 +45,10 @@ body {
   right: 0;
   background: url("../images/bg-pattern-bottom-mobile.svg") bottom 0 right 0 /
     contain no-repeat;
+  z-index: -999;
 }
 
-.social-proof-section h2 {
+.section-introduction h2 {
   color: #502050;
   font: 700 2.35rem "League Spartan", sans-serif;
   line-height: 0.85;
@@ -54,7 +56,7 @@ body {
   margin: 5.25rem 0 1.4rem;
 }
 
-.social-proof-section > p {
+.section-introduction p {
   color: #937b92;
   font: 500 1.1rem "League Spartan", sans-serif;
   line-height: 1.4;
@@ -141,4 +143,178 @@ body {
   color: #fff;
   font: 400 1.05rem "League Spartan", sans-serif;
   line-height: 1.3;
+}
+
+/* DESKTOP DESIGN */
+@media all and (width >= 800px) {
+  .social-proof-section {
+    padding: 0 7.8rem 5rem 10.3rem;
+  }
+
+  .social-proof-section::before {
+    height: 100%;
+    width: 40%;
+    background: url("../images/bg-pattern-top-desktop.svg") top 0 left 0 /
+      contain no-repeat;
+  }
+
+  .social-proof-section::after {
+    height: 100%;
+    width: 75%;
+    background: url("../images/bg-pattern-bottom-desktop.svg") bottom 0 right 0 /
+      contain no-repeat;
+  }
+
+  .flex-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 7.5rem;
+    margin-bottom: 4.42rem;
+  }
+
+  .section-introduction {
+    display: flex;
+    flex-direction: column;
+    gap: 1.8rem;
+    max-width: 26rem;
+  }
+
+  .section-introduction h2,
+  .section-introduction p {
+    text-align: left;
+    margin: 0;
+  }
+
+  .section-introduction h2 {
+    font: 700 3.2rem "League Spartan", sans-serif;
+  }
+
+  .ratings-box {
+    gap: 1.5rem;
+    width: 48.6%;
+  }
+
+  .rating {
+    flex-direction: row;
+    align-items: center;
+    gap: 2.05rem;
+    padding: 1.2em 4.5em 1.2em 1.95em;
+  }
+
+  .rating-1 {
+    align-self: flex-start;
+  }
+
+  .rating-2 {
+    align-self: center;
+  }
+
+  .rating-3 {
+    align-self: flex-end;
+  }
+
+  .rating:last-child {
+    margin: 0;
+  }
+
+  .reviews-box {
+    min-height: 17rem;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.85rem;
+  }
+
+  .review {
+    max-width: 21.91rem;
+    padding: 2.5rem 2rem 2.4rem;
+  }
+
+  .review-1 {
+    align-self: flex-start;
+  }
+
+  .review-2 {
+    align-self: center;
+  }
+
+  .review-3 {
+    align-self: flex-end;
+  }
+}
+
+@media all and (width >= 800px) and (width <= 1380px) {
+  .rating-1,
+  .rating-2,
+  .rating-3 {
+    align-self: flex-start;
+    width: 100%;
+    padding: 1.2em 0 1.2em 1.95em;
+  }
+
+  .reviews-box {
+    height: auto;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 1.85rem;
+  }
+
+  .review-1,
+  .review-2,
+  .review-3 {
+    align-self: flex-start;
+  }
+}
+
+@media all and (width >= 800px) and (width <= 1220px) {
+  .rating-1,
+  .rating-2,
+  .rating-3 {
+    flex-direction: column;
+    gap: 1rem;
+    padding: 1.2em 0;
+  }
+}
+
+@media all and (width >= 800px) and (width <= 1100px) {
+  .flex-container {
+    gap: 2rem;
+  }
+}
+
+@media all and (width >= 800px) and (width <= 1000px) {
+  .flex-container {
+    gap: 2rem;
+  }
+}
+
+@media all and (width >= 800px) and (width <= 970px) {
+  .rating-1,
+  .rating-2,
+  .rating-3 {
+    min-width: 16.5rem;
+  }
+
+  .reviews-box {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .review {
+    display: flex;
+    flex-direction: column;
+    min-width: 100%;
+    background-color: #502050;
+    border-radius: 8px;
+    padding: 2.5rem 2rem 2rem;
+  }
+}
+
+@media all and (width >= 800px) and (width <= 900px) {
+  .rating-1,
+  .rating-2,
+  .rating-3 {
+    min-width: 16.5rem;
+  }
 }
